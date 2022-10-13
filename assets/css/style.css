@@ -1,0 +1,263 @@
+/*ensures that all elements are sized in this more intuitive way*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+/* root settings for portfolio document */
+:root {
+  --white: #fff;
+  --workImageSize: 100px;
+  --headerBackgroundColor: #2a607c;
+}
+
+body {
+  background-image: url("../images/background.jpeg");
+}
+
+/* name and nav bar settings */
+.top-bar {
+  padding: 15px;
+  font-family: "Barlow Semi Condensed";
+  background-color: var(--headerBackgroundColor);
+  color: var(--white);
+}
+
+.top-bar h1 {
+  display: inline-block;
+  font-size: 50px;
+}
+
+.top-bar nav {
+  padding: 15px;
+  float: right;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.top-bar ul li {
+  display: inline;
+  padding: 5px;
+}
+
+.top-bar nav a {
+  font-size: 30px;
+  color: var(--white);
+  text-decoration: none;
+}
+
+nav {
+  display: block;
+}
+
+.me-img {
+  display: block;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 15px;
+  max-height: 250px;
+  float: left;
+}
+
+article {
+  background-color: #2a607c;
+}
+.content {
+  display: flex;
+  padding-top: 30px;
+  width: 60%, 60%;
+}
+
+h2 {
+  font-size: 40px;
+  display: block;
+  color: var(--white);
+}
+
+.about-me {
+  display: flex;
+  font-family: "Barlow Semi Condensed";
+  font-size: 20px;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 10%;
+  width: 50%;
+}
+
+.about-me h2 img {
+  display: flex;
+  justify-content: center;
+}
+
+.about-me h2 {
+  margin-left: 30px;
+}
+
+.about-me p {
+  font-size: 25px;
+}
+
+h3 {
+  margin-left: 15px;
+  padding: 10px;
+  color: var(--white);
+  font-family: "Barlow Semi Condensed";
+  font-size: 30px;
+}
+
+.content p {
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+p {
+  color: var(--white);
+  font-family: "Barlow Semi Condensed";
+}
+
+.my-applications h2 {
+  font-family: "Barlow Semi Condensed";
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #2a607c;
+  width: 75%;
+}
+
+.my-applications p {
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.twitter-clone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  width: 60%;
+}
+
+.twitter-img {
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 15px;
+  max-height: var(--workImageSize);
+}
+
+.calculator-img {
+  display: block;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 15px;
+  max-height: 150px;
+}
+
+.calculator {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  width: 60%;
+}
+
+.album-review {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  width: 60%;
+}
+
+.album-review-img {
+  max-height: var(--workImageSize);
+}
+
+h4 {
+  display: flex;
+  justify-content: center;
+  color: var(--white);
+  margin-bottom: 10px;
+  padding-left: 10px;
+  font-family: "Barlow Semi Condensed";
+  font-size: 30px;
+  background-color: var(--headerBackgroundColor);
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #cacaca;
+  background-color: var(--headerBackgroundColor);
+}
+
+.footer nav a,
+ul li {
+  display: inline-block;
+  align-items: flex-start;
+  color: var(--white);
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+  text-decoration: none;
+  padding-top: 3.5px;
+  padding-bottom: 3.5px;
+  padding-right: 7px;
+  padding-left: 7px;
+}
+
+/* various media screen settings */
+@media only screen and (max-width: 1077px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 1077px) {
+  .about-me {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 1077px) {
+  .calculator {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 1077px) {
+  .twitter-clone {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 1077px) {
+  .album-review {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .about-me {
+    word-wrap: break-word;
+  }
+}
