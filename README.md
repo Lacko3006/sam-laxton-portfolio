@@ -1,4 +1,4 @@
-# Assignment 2
+# Personal Portfolio
 
 ## Description
 
@@ -10,4 +10,4 @@ This project was build to demonstrate my ability to future employers looking for
 ![Sam Laxton Portfolio](./assets/images/portfolio.png)
 
 ## Link
-https://lacko3006.github.io/Assignment2/
+https://lacko3006.github.io/sam-laxton-portfolio/
